@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Inventario</title>
+</head>
+<body>
+  <div class="container">
+  <h1> Sistema de Inventario</h1>
+  <p class="sub">Gestiona tus productos de manera fácil y rápida</p>
+  <!-- Formulario -->
+  <div class="card">
+    <h3>Nuevo Producto</h3>
+    <div class="form">
+      <input id="nombre" placeholder="Nombre del producto">
+      <input id="precio" type="number" placeholder="Precio">
+      <input id="stock" type="number" placeholder="Stock">
+      <button onclick="guardarProducto()">Guardar Producto</button>
+    </div>
+  </div>
+  <!-- Tabla -->
+  <div class="card">
+    <h3>Lista de Productos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla"></tbody>
+    </table>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
