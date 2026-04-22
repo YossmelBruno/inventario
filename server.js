@@ -17,8 +17,6 @@ db.run(`CREATE TABLE IF NOT EXISTS productos (
     nombre TEXT,
     precio REAL,
     stock INTEGER
-
-    
 )`);
 
 app.post('/productos', (req, res) => {
